@@ -101,7 +101,8 @@ module.exports = {
       name: 'application',
       filename: 'remoteEntry.js',
       exposes: {
-      "./About":"./src/About.tsx"
+        "./Store": "./src/Redux/Store.ts",
+        "./About":"./src/About.tsx"
       },
       shared: {
         react: { eager: true },
