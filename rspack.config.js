@@ -16,6 +16,7 @@ module.exports = {
   
   devServer: {
     port: 8082,
+    allowedHosts:"all",
     historyApiFallback: true,
     watchFiles: [path.resolve(__dirname, 'src')],
     onListening: function (devServer) {
@@ -99,7 +100,9 @@ module.exports = {
     new rspack.container.ModuleFederationPlugin({
       name: 'application',
       filename: 'remoteEntry.js',
-      exposes: {},
+      exposes: {
+      "./About":"./src/About.tsx"
+      },
       shared: {
         react: { eager: true },
         'react-dom': { eager: true },
