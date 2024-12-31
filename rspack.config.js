@@ -53,7 +53,6 @@ module.exports = {
             options: {
               postcssOptions: {
                 plugins: {
-                  tailwindcss: {},
                   autoprefixer: {},
                 },
               },

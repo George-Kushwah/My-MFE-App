@@ -7,19 +7,14 @@ import { RootState } from "./Redux/Store";
 import * as actions from "./Redux/Reducer";
 
 import './index.css'
+import About from './About';
 
 const App = () => {
-    const { err, apidt }: any = useSelector(
-      (state: RootState) => state.app_mfe
-    );
-    const dispatch = useDispatch()
-    useEffect(() => {
-      dispatch(actions.load())
-    }, [])
-  console.log(apidt)
+
   return (
     <>
-    sdfdfsdfsdfds</>
+      <About />
+    </>
   )
 }
 const rootElement = document.getElementById('app')
