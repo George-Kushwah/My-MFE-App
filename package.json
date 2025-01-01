@@ -36,6 +36,7 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.1.1",
     "redux-saga": "^1.3.0",
-    "sass": "^1.83.0"
+    "sass": "^1.83.0",
+     "sass-loader": "^16.0.4"
   }
 }
