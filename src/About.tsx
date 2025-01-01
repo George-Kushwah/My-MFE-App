@@ -14,14 +14,13 @@ const dispatch = useDispatch();
     setas("Hello")
     dispatch(actions.load())
   }, [])
-  console.log(apidt)
   return (
     <>
     <div className='container-fluid pl-2 pr-2 mt-3'>
         <h3> About us page app {as}</h3>
-        {apidt && apidt.length > 0 && apidt.map((item: any, ind: any) => {
+        {apidt && apidt.length > 0 ? apidt.map((item: any, ind: any) => {
           return (<p key={ind}>{item.name}</p>)
-        })}
+        }):err}
       </div>
       </>
   )
